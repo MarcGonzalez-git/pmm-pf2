@@ -13,7 +13,7 @@ class Persona {
     this.email = email,
     this.dateOfBirth = dateOfBirth;
     
-    String get geFullName => fullName;
+    String get getFullName => fullName;
     String get getEmail => email;
     DateTime get getDateTime => dateOfBirth;
 
