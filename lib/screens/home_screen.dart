@@ -10,7 +10,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
 
-  Persona persona = Persona.nou(fullName: "Marc González Murillo", email: "marcgonzalez1@paucasesnovescifp.cat", dateOfBirth: DateTime(2007, 05, 24)
+  Persona persona = Persona.nou(fullName: "Marc González Murillo", email: "marcgonzalez1@paucasesnovescifp.cat", password: "123321", dateOfBirth: DateTime(2007, 05, 24)
   );
 
   @override
