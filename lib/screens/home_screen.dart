@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pf2/models/Persona.dart';
 import 'package:pf2/screens/personal_screen.dart';
+import 'package:pf2/screens/widget_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -59,6 +60,19 @@ class _HomeScreenState extends State<HomeScreen> {
                 }
               },
               child: Text("Edit Profile"),
+            ),
+
+            // Explore Widget Showcase Button
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => WidgetScreen(),
+                  ),
+                );
+              },
+              child: Text("Explore Widget Showcase"),
             ),
 
           ],
