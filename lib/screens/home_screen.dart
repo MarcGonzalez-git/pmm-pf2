@@ -22,9 +22,9 @@ class _HomeScreenState extends State<HomeScreen> {
         title: Text("DevProfile M3"),
       ),
 
-      body: Padding(
-        padding: EdgeInsets.all(1),
+      body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Card(
               child: Padding(
@@ -41,7 +41,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             ),
-            SizedBox(height: 20),
 
             // Edit Profile Button
             ElevatedButton(
