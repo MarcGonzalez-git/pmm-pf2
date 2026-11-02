@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pf2/models/Persona.dart';
+import 'package:pf2/screens/personal_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -40,6 +41,26 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             SizedBox(height: 20),
+
+            // Edit Profile Button
+            ElevatedButton(
+              onPressed: () async {
+                Persona? resultat = await Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => PersonalScreen(persona: persona),
+                  ),
+                );
+
+                if (resultat != null) {
+                  setState(() {
+                    persona = resultat;
+                  });
+                }
+              },
+              child: Text("Edit Profile"),
+            ),
+
           ],
         ),
       ),
